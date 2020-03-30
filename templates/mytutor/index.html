@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block stylesheets %}
+    <style>
+        main {
+            background: url("{% static 'images/university.jpg' %}") center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media (min-width: 1200px) {
+            main {
+                max-width: 100% !important;
+            }
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <div class="jumbotron text-white" style="background-color: inherit">
+        <div class="col-md-6 px-0">
+            <p class="lead my-3">MyTutor is an application designed specifically for University of Glasgow students.
+                This application gives students the opportunity to comment on course pages. The application gives
+                students the chance to identify and communicate with the right tutor for them. The application help
+                student request bookings. With this application, we hope to connect students with useful information
+                designed specifically for their targeted course.</p>
+        </div>
+    </div>
+
+{% endblock %}
